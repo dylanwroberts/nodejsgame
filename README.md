@@ -9,5 +9,5 @@ An authoritative server architecture means that state mutation take place **on t
 This alleviates the need for extensive cheat detection since players aren't the ones modifying state.
 
 Along with the approach comes several common issues that this project seeks to solve:
-* the back and forth nature of an authoritative server takes time. Therefor client-side animation must be independant.
+* the back and forth nature of an authoritative server takes time. Therefore client-side animation must be independant.
 * the variablity in timings can cause the client and server to go out of sync.
