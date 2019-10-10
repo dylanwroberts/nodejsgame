@@ -1,0 +1,5 @@
+{
+  "source": "./shared",
+  "destination": "./docs",
+  "plugins": [{"name": "esdoc-standard-plugin"}]
+}
