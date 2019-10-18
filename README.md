@@ -5,6 +5,8 @@ a multiplayer browser game built using:
 * https://socket.io/ - to handle websocket communication
 * https://www.pixijs.com/ - fast and powerful WebGL renderer
 
+***
+
 An authoritative server architecture means that state mutation take place **on the server**.
 This alleviates the need for extensive cheat detection since players aren't the ones modifying state.
 

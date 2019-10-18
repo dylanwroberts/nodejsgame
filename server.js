@@ -6,7 +6,7 @@ const io = require('socket.io')(server);
 const chalk = require('chalk');
 const path = require('path');
 const util = require('./src/shared/util');
-const PORT = 8000;
+const PORT = 4000;
 
 app.use(express.static(path.join(__dirname, 'src', 'client')));
 app.use(express.static(path.join(__dirname, 'src', 'shared')));
