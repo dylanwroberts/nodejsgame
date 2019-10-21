@@ -9,4 +9,6 @@ class GameObject {
     get x() { return this.location.x; }
 
     get y() { return this.location.y; }
+
+    get id() { return this.id; }
 }
