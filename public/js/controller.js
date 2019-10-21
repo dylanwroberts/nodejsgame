@@ -3,7 +3,7 @@
  * @todo test the system on Windows/Linux
  */
 
-class ClientController {
+class Controller {
     constructor() {
         this.up = new Key(this.handleStateChange);
         this.right = new Key(this.handleStateChange);
@@ -42,6 +42,11 @@ class ClientController {
             default: break;
         }
     }
+
+    /*resizes the view to be the full window size.
+    This is apart of the controller because resizing could
+    be considered a type of control input.*/
+    handleWindowResize = app => { app.renderer.resize(window.innerWidth, window.innerHeight); }
 }
 
 //simple helper class used by ClientController to keep track of key state

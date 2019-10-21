@@ -5,14 +5,14 @@ const server = require('http').Server(app);
 const io = require('socket.io')(server);
 const chalk = require('chalk');
 const path = require('path');
-const util = require('./src/shared/util');
+const util = require('./shared/util');
 const PORT = 4000;
 
-app.use(express.static(path.join(__dirname, 'src', 'client')));
-app.use(express.static(path.join(__dirname, 'src', 'shared')));
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'shared')));
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'src', 'client', 'client.html'));
+    res.sendFile(path.join(__dirname, 'public', 'client.html'));
 });
 
 io.on('connection', socket => {
